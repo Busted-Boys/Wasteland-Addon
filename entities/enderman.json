@@ -55,7 +55,7 @@
       },
       "minecraft:health": {
         "value": 100,
-        "max": 100
+        "max": 200
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -67,7 +67,7 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 10
+        "damage": 30
       },
       "minecraft:follow_range": {
         "value": 32,
