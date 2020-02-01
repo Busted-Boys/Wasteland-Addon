@@ -15,7 +15,7 @@
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 0,
+            "damage": 1,
             "knockback": true,
             "destroy_on_hit": true
           },
