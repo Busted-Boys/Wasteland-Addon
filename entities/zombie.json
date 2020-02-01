@@ -40,7 +40,8 @@
       }
     ]
   }
-}
+}  "minecraft:burns_in_daylight": false {},
+
    "minecraft:health": {
         "value": 60,
         "max": 60
