@@ -338,8 +338,14 @@
           }
         ]
       },
-      "minecraft:attack": {
-        "damage": 9
+     "minecraft:attack": {
+        "damage": 9,
+        "effect_name": "hunger",
+        "effect_duration": 30
+        "effect_name": "poison",
+        "effect_duration": 10
+        "effect_name": "slowness",
+        "effect_duration": 30
       },
       "minecraft:nameable": {
       },
