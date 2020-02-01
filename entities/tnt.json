@@ -17,7 +17,7 @@
           },
           "fuse_lit": true,
           "power": 4,
-          "causes_fire": false
+          "causes_fire": true
         }
       }
     },
@@ -35,12 +35,12 @@
         "fuse_length": 4,
         "fuse_lit": true,
         "power": 4,
-        "causes_fire": false
+        "causes_fire": true
       },
 	    "minecraft:physics": {
       },
       "minecraft:pushable": {
-        "is_pushable": false,
+        "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
