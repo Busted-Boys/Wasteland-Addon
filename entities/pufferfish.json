@@ -58,7 +58,7 @@
       "minecraft:start_deflate": {
         "minecraft:timer": {
           "looping": false,
-          "time": 10,
+          "time": 20,
           "randomInterval": false,
           "time_down_event": {
             "event": "minecraft:on_deflate"
@@ -71,7 +71,7 @@
         },
         "minecraft:area_attack" : {
           "damage_range": 0.2,
-          "damage_per_tick": 2,
+          "damage_per_tick": 5,
           "cause": "contact",
           "entity_filter": {
             "any_of": [
@@ -83,7 +83,7 @@
         "minecraft:mob_effect": {
           "effect_range": 0.2,
           "mob_effect": "poison",
-          "effect_time": 10,
+          "effect_time": 180,
           "entity_filter": {
             "any_of": [
               { "test": "is_family", "subject": "other", "value": "player" },
