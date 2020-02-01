@@ -10,9 +10,9 @@
     "component_groups": {
         "minecraft:exploding": {
           "minecraft:explode": {
-            "fuse_length": 1.5,
+            "fuse_length": 0.5,
             "fuse_lit": true,
-            "power": 3,
+            "power": 9,
             "causes_fire": false,
             "destroy_affected_by_griefing": true
           }
@@ -25,7 +25,7 @@
           "minecraft:explode": {
             "fuse_length": 1.5,
             "fuse_lit": true,
-            "power": 6,
+            "power": 18,
             "causes_fire": false,
             "destroy_affected_by_griefing": true
           }
@@ -36,7 +36,7 @@
           "minecraft:explode": {
             "fuse_length": 1.5,
             "fuse_lit": true,
-            "power": 3,
+            "power": 9,
             "causes_fire": false,
             "destroy_affected_by_griefing": true
           },
@@ -49,7 +49,7 @@
           "minecraft:explode": {
             "fuse_length": 1.5,
             "fuse_lit": true,
-            "power": 6,
+            "power": 18,
             "causes_fire": false,
             "destroy_affected_by_griefing": true
           },
@@ -92,8 +92,8 @@
           "table": "loot_tables/entities/creeper.json"
         },
         "minecraft:health": {
-          "value": 20,
-          "max": 20
+          "value": 30,
+          "max": 30
         },
         "minecraft:hurt_on_condition": {
           "damage_conditions": [
