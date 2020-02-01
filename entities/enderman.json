@@ -20,7 +20,7 @@
 
       "minecraft:enderman_angry": {
         "minecraft:angry": {
-          "duration": 25,
+          "duration": 180,
           "calm_event": {
             "event": "minecraft:on_calm",
             "target": "self"
@@ -45,7 +45,7 @@
         "family": [ "enderman", "monster", "mob" ]
       },
       "minecraft:breathable": {
-        "total_supply": 15,
+        "total_supply": 120,
         "suffocate_time": 0
       },
       "minecraft:nameable": {
@@ -62,7 +62,7 @@
           {
             "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
-            "damage_per_tick": 4
+            "damage_per_tick": 1
           },
         ]
       },
@@ -124,8 +124,8 @@
         "must_see": true
       },
       "minecraft:navigation.walk": {
-        "can_path_over_water": false,
-        "avoid_water": true
+        "can_path_over_water": true,
+        "avoid_water": false
       },
       "minecraft:movement.basic": {
 
