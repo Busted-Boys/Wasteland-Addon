@@ -16,8 +16,8 @@
       "minecraft:projectile": {
        "on_hit": {
         "grant_xp": {
-          "minXP": 3,
-          "maxXP": 11
+          "minXP": 1,
+          "maxXP": 1500
         },
         "remove_on_hit": { }
        },
