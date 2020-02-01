@@ -41,3 +41,7 @@
     ]
   }
 }
+   "minecraft:health": {
+        "value": 60,
+        "max": 60
+      }
