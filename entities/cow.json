@@ -78,6 +78,16 @@
       "minecraft:type_family": {
         "family": [ "cow", "mob" ]
       },
+        "minecraft:cow_saddled": {
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:behavior.player_ride_tamed": {
+        }
+      },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0
