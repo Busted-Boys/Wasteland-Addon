@@ -67,7 +67,9 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 30
+        "damage": 30,
+        "effect_name": "blindness",
+        "effect_duration": 30,
       },
       "minecraft:follow_range": {
         "value": 32,
