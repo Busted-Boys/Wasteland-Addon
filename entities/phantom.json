@@ -26,8 +26,8 @@
       "minecraft:nameable": {
       },
       "minecraft:health": {
-        "value": 9999999999,
-        "max": 9999999999
+        "value": 40,
+        "max": 60
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -46,7 +46,7 @@
         "is_pushable_by_piston": true
       },
       "minecraft:attack": {
-        "damage": 10
+        "damage": 20
       },
       "minecraft:breathable": {
         "total_supply": 15,
