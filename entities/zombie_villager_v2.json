@@ -342,10 +342,13 @@
         "damage": 9,
         "effect_name": "hunger",
         "effect_duration": 30
+       "amplifier": 1
         "effect_name": "poison",
         "effect_duration": 10
+       "amplifier": 1
         "effect_name": "slowness",
         "effect_duration": 30
+       "amplifier": 2
       },
       "minecraft:nameable": {
       },
