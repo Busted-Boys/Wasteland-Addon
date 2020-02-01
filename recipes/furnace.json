@@ -9,13 +9,16 @@
     "tags": [ "crafting_table" ],
     "pattern": [
       "###",
-      "# #",
+      "#¤#",
       "###"
     ],
     "key": {
       "#": {
         "item": "minecraft:cobblestone"
-      }
+      },
+      "¤": {
+        "item": "minecraft:coal_block"
+      },
     },
     "result": {
       "item": "minecraft:furnace"
