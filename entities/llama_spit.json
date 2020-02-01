@@ -16,8 +16,8 @@
 
         "on_hit": {
           "impact_damage": {
-            "damage": 1,
-            "knockback": false
+            "damage": 5,
+            "knockback": true
           },
           "remove_on_hit": { }
         },
