@@ -185,7 +185,7 @@
             },
             {
               "mate_type": "minecraft:donkey",
-              "baby_type": "minecraft:mule",
+              "baby_type": "minecraft:ravager",
               "breed_event": {
                 "event": "minecraft:entity_born",
                 "target": "baby"
