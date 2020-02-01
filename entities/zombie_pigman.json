@@ -36,9 +36,9 @@
       },
       "minecraft:pig_zombie_angry": {
         "minecraft:angry": {
-          "duration": 180,
+          "duration": 600,
           "broadcast_anger": true,
-          "broadcast_range": 50,
+          "broadcast_range": 100,
           "calm_event": {
             "event": "minecraft:on_calm",
             "target": "self"
@@ -90,14 +90,20 @@
         "table": "loot_tables/entities/zombie_pigman_gear.json"
       },
       "minecraft:health": {
-        "value": 40,
-        "max": 40
+        "value": 60,
+        "max": 60
       },
       "minecraft:movement": {
         "value": 0.23
       },
       "minecraft:attack": {
-        "damage": 10
+        "damage": 16
+"effect_name": "weakness",
+        "effect_duration": 30
+       "amplifier": 2
+        "effect_name": "hunger",
+        "effect_duration": 30
+       "amplifier": 1
       },
       "minecraft:behavior.mount_pathing": {
         "priority": 2,
