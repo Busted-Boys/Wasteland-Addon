@@ -4,7 +4,7 @@
   "description": {
     "identifier": "minecraft:wither_skull",
     "is_spawnable": false,
-    "is_summonable": false,
+    "is_summonable": true,
     "is_experimental": false
   },
 
@@ -14,7 +14,7 @@
         "fuse_length": 0,
         "fuse_lit": true,
         "power": 3,
-        "causes_fire": false,
+        "causes_fire": true,
         "destroy_affected_by_griefing": true
       }
     }
