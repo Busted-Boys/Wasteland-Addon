@@ -26,15 +26,15 @@
       "minecraft:nameable": {
       },
       "minecraft:health": {
-        "value": 20,
-        "max": 20
+        "value": 9999999999,
+        "max": 9999999999
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
             "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
-            "damage_per_tick": 4
+            "damage_per_tick": 0
           }
         ]
       },
@@ -46,13 +46,13 @@
         "is_pushable_by_piston": true
       },
       "minecraft:attack": {
-        "damage": 6
+        "damage": 10
       },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0,
         "breathes_air": true,
-        "breathes_water": false
+        "breathes_water": true
       },
       "minecraft:collision_box": {
         "width": 0.9,
@@ -64,8 +64,6 @@
       "minecraft:movement.glide": {
         "start_speed": 0.1,
         "speed_when_turning": 0.2
-      },
-      "minecraft:burns_in_daylight": {
       },
       "minecraft:follow_range": {
         "value": 64,
