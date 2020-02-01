@@ -54,8 +54,8 @@
         "table": "loot_tables/entities/enderman.json"
       },
       "minecraft:health": {
-        "value": 40,
-        "max": 40
+        "value": 100,
+        "max": 100
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -64,15 +64,10 @@
             "cause": "lava",
             "damage_per_tick": 4
           },
-          {
-            "filters": { "test": "in_water_or_rain", "operator": "==", "value": true },
-            "cause": "drowning",
-            "damage_per_tick": 1
-          }
         ]
       },
       "minecraft:attack": {
-        "damage": 7
+        "damage": 10
       },
       "minecraft:follow_range": {
         "value": 32,
