@@ -13,7 +13,7 @@
       "minecraft:explode": {
         "fuse_length": 0,
         "fuse_lit": true,
-        "power": 1,
+        "power": 10,
         "causes_fire": false,
         "max_resistance": 4.0,
         "destroy_affected_by_griefing": true
@@ -37,13 +37,13 @@
         },
         "mob_effect": {
           "effect": "wither",
-          "durationeasy": 0,
-          "durationnormal": 200,
-          "durationhard": 800,
+          "durationeasy": 800,
+          "durationnormal": 860,
+          "durationhard": 920,
           "amplifier": 1
         }
       },
-      "power": 0.6,
+      "power": 5.4,
       "gravity": 0.00,
       "uncertainty_base": 7.5,
       "uncertainty_multiplier": 1,
