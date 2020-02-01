@@ -9,11 +9,7 @@
       {
         "minecraft:spawns_on_surface": {},
         "minecraft:spawns_underground": {},
-        "minecraft:brightness_filter": {
-          "min": 0,
-          "max": 7,
-          "adjust_for_weather": true
-        },
+
         "minecraft:difficulty_filter": {
           "min": "easy",
           "max": "hard"
@@ -22,8 +18,8 @@
           "default": 100
         },
         "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "min_size": 6,
+          "max_size": 12
         },
         "minecraft:permute_type": [
           {
