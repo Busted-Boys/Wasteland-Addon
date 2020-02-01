@@ -24,7 +24,7 @@
             "effect": "levitation",
             "durationeasy": 200,
             "durationnormal": 200,
-            "durationhard": 200,
+            "durationhard": 600,
             "amplifier": 1
           },
           "remove_on_hit": {
@@ -35,7 +35,7 @@
           }
         },
         "hit_sound": "bullet.hit",
-        "destroyOnHurt": true,
+        "destroyOnHurt": false,
         "crit_particle_on_hurt": true,
         "power": 1.6,
         "gravity": 0.05,
