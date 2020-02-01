@@ -19,8 +19,8 @@
       "minecraft:ranged_attack": {
         "minecraft:behavior.ranged_attack": {
           "attack_interval_min": 1,
-          "attack_interval_max": 3,
-          "attack_radius": 15
+          "attack_interval_max": 1,
+          "attack_radius": 30
         },
         "minecraft:shooter": {
           "type": "Arrow",
@@ -46,7 +46,7 @@
           "track_target": true
         },
         "minecraft:attack": {
-          "damage": 3
+          "damage": 9
         },
         "minecraft:environment_sensor": {
           "triggers": {
@@ -83,17 +83,8 @@
       },
 
       "minecraft:health": {
-        "value": 20,
-        "max": 20
-      },
-      "minecraft:hurt_on_condition": {
-        "damage_conditions": [
-          {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
-            "cause": "lava",
-            "damage_per_tick": 4
-          }
-        ]
+        "value": 60,
+        "max": 60
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/skeleton.json"
