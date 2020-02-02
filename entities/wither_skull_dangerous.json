@@ -4,7 +4,7 @@
   "description": {
     "identifier": "minecraft:wither_skull_dangerous",
     "is_spawnable": false,
-    "is_summonable": false,
+    "is_summonable": true,
     "is_experimental": false
   },
 
@@ -13,8 +13,8 @@
       "minecraft:explode": {
         "fuse_length": 0,
         "fuse_lit": true,
-        "power": 10,
-        "causes_fire": false,
+        "power": 5,
+        "causes_fire": true,
         "max_resistance": 4.0,
         "destroy_affected_by_griefing": true
       }
