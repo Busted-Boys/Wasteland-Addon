@@ -10,7 +10,7 @@
 
     "components": {
       "minecraft:experience_reward": {
-        "on_death": "50"
+        "on_death": "2229"
       },
       "minecraft:breathable": {
         "total_supply": 15,
