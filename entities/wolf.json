@@ -74,9 +74,9 @@
 
       "minecraft:wolf_angry": {
         "minecraft:angry": {
-          "duration": 25,
+          "duration": 300,
           "broadcast_anger": true,
-          "broadcast_range": 20,
+          "broadcast_range": 60,
           "calm_event": {
             "event": "minecraft:on_calm",
             "target": "self"
@@ -195,7 +195,10 @@
           "stop_distance": 2
         },
         "minecraft:attack": {
-          "damage": 4
+          "damage": 16
+		"effect_name": "hunger",
+        "effect_duration": 10
+       "amplifier": 1
         },
         "minecraft:behavior.breed": {
           "priority": 7
@@ -257,8 +260,8 @@
         "height": 0.8
       },
       "minecraft:health": {
-        "value": 8,
-        "max": 8
+        "value": 20,
+        "max": 20
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -283,7 +286,7 @@
       "minecraft:can_climb": {
       },
       "minecraft:attack": {
-        "damage": 3
+        "damage": 16
       },
       "minecraft:healable": {
         "items": [
