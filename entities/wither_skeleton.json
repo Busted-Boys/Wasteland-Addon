@@ -20,17 +20,18 @@
         "breathes_water": true
       },
       "minecraft:health": {
-        "value": 50,
-        "max": 100
+        "value": 60,
+        "max": 60
       },
       "minecraft:collision_box": {
         "width": 0.72,
         "height": 2.01
       },
       "minecraft:attack": {
-        "damage": 10,
+        "damage": 20,
         "effect_name": "wither",
-        "effect_duration": 10
+        "effect_duration": 20
+        "amplifier": 2
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/wither_skeleton.json"
@@ -43,7 +44,7 @@
       },
       "minecraft:navigation.walk": {
         "is_amphibious": true,
-        "avoid_sun": true,
+        "avoid_sun": false,
         "avoid_water": true
       },
       "minecraft:movement.basic": {
