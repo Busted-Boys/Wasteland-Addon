@@ -13,8 +13,8 @@
         "minecraft:explode": {
           "fuse_length": 4,
           "fuse_lit": true,
-          "power": 3,
-          "causes_fire": false
+          "power": 6,
+          "causes_fire": true
         },
         "minecraft:rail_sensor": {
           
@@ -27,8 +27,8 @@
         "minecraft:explode": {
           "fuse_length": 0,
           "fuse_lit": true,
-          "power": 3,
-          "causes_fire": false
+          "power": 6,
+          "causes_fire": true
         },
         "minecraft:rail_sensor": {
           
