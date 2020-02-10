@@ -136,7 +136,7 @@
                 }
               ]
             },
-            "max_dist": 10
+            "max_dist": 64
           }
         ],
         "must_reach": true
