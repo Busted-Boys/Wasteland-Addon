@@ -77,6 +77,7 @@
           },
           "breed_items": [
             "seagrass"
+            "kelp"
           ]
         },
         "minecraft:behavior.breed": {
@@ -134,7 +135,7 @@
       "minecraft:nameable": {
       },
       "minecraft:health": {
-        "value": 30
+        "value": 15
       },
       "minecraft:damage_sensor": {
         "triggers": {
@@ -196,6 +197,7 @@
         "speed_multiplier": 1.1,
         "items": [
           "seagrass"
+          "kelp"
         ]
       },
       "minecraft:behavior.move_to_water": {
