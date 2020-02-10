@@ -41,7 +41,7 @@
       "minecraft:vindicator_johnny": {
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 2,
-          "within_radius": 12,
+          "within_radius": 24,
           "must_see": true,
           "must_see_forget_duration": 40.0,
           "entity_types": [
@@ -56,7 +56,7 @@
                   }
                 ]
               },
-              "max_dist": 12
+              "max_dist": 24
             }
           ]
         }
@@ -64,7 +64,7 @@
       "minecraft:default_targeting": {
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 2,
-          "within_radius": 12,
+          "within_radius": 24,
           "must_see": true,
           "must_see_forget_duration": 40.0,
           "entity_types": [
@@ -93,7 +93,7 @@
                   }
                 ]
               },
-              "max_dist": 12
+              "max_dist": 24
             },
             {
               "filters": {
@@ -111,7 +111,7 @@
                   }
                 ]
               },
-              "max_dist": 12
+              "max_dist": 24
             }
           ]
         }
@@ -140,7 +140,7 @@
           "can_break_doors": true
         },
         "minecraft:annotation.break_door": {
-          "break_time": 30,
+          "break_time": 15,
           "min_difficulty": "normal"
         },
         "minecraft:ambient_sound_interval": {
@@ -275,8 +275,8 @@
         "height": 1.9
       },
       "minecraft:health": {
-        "value": 24,
-        "max": 24
+        "value": 72,
+        "max": 72
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -288,7 +288,7 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 8
+        "damage": 112
       },
       "minecraft:movement": {
         "value": 0.35
