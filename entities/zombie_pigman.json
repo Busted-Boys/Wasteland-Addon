@@ -97,7 +97,7 @@
         "value": 0.23
       },
       "minecraft:attack": {
-        "damage": 16
+        "damage": 224
 "effect_name": "weakness",
         "effect_duration": 30
        "amplifier": 2
