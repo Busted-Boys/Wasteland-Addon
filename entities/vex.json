@@ -20,11 +20,11 @@
         "table": "loot_tables/entities/vex_gear.json"
       },
       "minecraft:health": {
-        "value": 14,
-        "max": 14
+        "value": 42,
+        "max": 42
       },
       "minecraft:attack": {
-        "damage": 3
+        "damage": 42
       },
       "minecraft:collision_box": {
         "width": 0.4,
@@ -73,7 +73,7 @@
             "max_dist": 70
           }
         ],
-        "must_see": true
+        "must_see": false
       },
       "minecraft:behavior.look_at_player": {
         "priority": 9,
