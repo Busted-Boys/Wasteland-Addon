@@ -28,7 +28,7 @@
         "height": 2.01
       },
       "minecraft:attack": {
-        "damage": 20,
+        "damage": 140,
         "effect_name": "wither",
         "effect_duration": 20
         "amplifier": 2
