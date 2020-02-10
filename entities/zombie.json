@@ -56,7 +56,7 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 9
+        "damage": 126
         "effect_name": "hunger",
         "effect_duration": 30
        "amplifier": 1
