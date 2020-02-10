@@ -13,8 +13,8 @@
         "family": [ "tripodcamera", "inanimate", "mob" ]
       },
       "minecraft:health": {
-        "value": 4,
-        "max": 4
+        "value": 3,
+        "max": 3
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
