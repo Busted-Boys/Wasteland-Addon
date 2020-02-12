@@ -20,7 +20,7 @@
         "minecraft:behavior.ranged_attack": {
           "attack_interval_min": 1,
           "attack_interval_max": 1,
-          "attack_radius": 30
+          "attack_radius": 32
         },
         "minecraft:shooter": {
           "type": "Arrow",
@@ -46,7 +46,7 @@
           "track_target": true
         },
         "minecraft:attack": {
-          "damage": 9
+          "damage": 42
         },
         "minecraft:environment_sensor": {
           "triggers": {
@@ -77,9 +77,6 @@
         "total_supply": 15,
         "suffocate_time": 0,
         "breathes_water": true
-      },
-
-      "minecraft:burns_in_daylight": {
       },
 
       "minecraft:health": {
@@ -141,7 +138,7 @@
               "subject": "other",
               "value": "player"
             },
-            "max_dist": 16
+            "max_dist": 32
           },
           {
             "filters": {
@@ -149,7 +146,7 @@
               "subject": "other",
               "value": "irongolem"
             },
-            "max_dist": 16
+            "max_dist": 32
           },
           {
             "filters": {
@@ -167,7 +164,7 @@
                 }
               ]
             },
-            "max_dist": 16
+            "max_dist": 32
           }
         ],
         "must_see": true
