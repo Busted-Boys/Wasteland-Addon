@@ -14,7 +14,7 @@
           "height": 2.08
         },
         "minecraft:health": {
-          "value": 64,
+          "value": 128,
           "max": 128
         },
         "minecraft:movement": {
@@ -22,6 +22,9 @@
         },
         "minecraft:attack": {
           "damage": 20
+           "effect_name": "nausea",
+        "effect_duration": 60
+       "amplifier": 1
         }
       },
 
@@ -31,7 +34,7 @@
           "height": 1.04
         },
         "minecraft:health": {
-          "value": 32,
+          "value": 64,
           "max": 64
         },
         "minecraft:movement": {
@@ -39,6 +42,9 @@
         },
         "minecraft:attack": {
           "damage": 10
+           "effect_name": "nausea",
+        "effect_duration": 40
+       "amplifier": 1
         }
       },
 
@@ -48,7 +54,7 @@
           "height": 0.52
         },
         "minecraft:health": {
-          "value": 16,
+          "value": 32,
           "max": 32
         },
         "minecraft:movement": {
@@ -56,6 +62,9 @@
         },
         "minecraft:attack": {
           "damage": 5
+           "effect_name": "nausea",
+        "effect_duration": 20
+       "amplifier": 1
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/slime.json"
@@ -150,7 +159,7 @@
                 }
               ]
             },
-            "max_dist": 16
+            "max_dist": 32
           }
         ],
         "must_see": true
