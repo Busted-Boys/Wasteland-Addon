@@ -4,7 +4,7 @@
   "description": {
     "identifier": "minecraft:small_fireball",
     "is_spawnable": false,
-    "is_summonable": false,
+    "is_summonable": true,
     "is_experimental": false
   },
   "components": {
@@ -16,8 +16,8 @@
 
     "on_hit": {
       "impact_damage": {
-        "damage": 5,
-        "knockback": false,
+        "damage": 70,
+        "knockback": true,
         "catch_fire": true,
         "semi_random_diff_damage": false
       },
