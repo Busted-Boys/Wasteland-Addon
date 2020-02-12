@@ -16,7 +16,7 @@
             "range_max": 2.0
           },
           "fuse_lit": true,
-          "power": 4,
+          "power": 6,
           "causes_fire": true
         }
       }
@@ -34,7 +34,7 @@
       "minecraft:explode": {
         "fuse_length": 4,
         "fuse_lit": true,
-        "power": 4,
+        "power": 6,
         "causes_fire": true
       },
 	    "minecraft:physics": {
