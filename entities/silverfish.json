@@ -53,8 +53,8 @@
       "table": "loot_tables/entities/silverfish.json"
     },
       "minecraft:health": {
-        "value": 8,
-        "max": 8
+        "value": 112,
+        "max": 112
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -63,6 +63,29 @@
             "cause": "lava",
             "damage_per_tick": 4
           }
+		 "minecraft:attack": {
+        "damage": 2
+        "effect_name": "hunger",
+        "effect_duration": 60
+       "amplifier": 1
+		"effect_name": "slowness",
+        "effect_duration": 60
+       "amplifier": 2
+		"effect_name": "mining fatigue",
+        "effect_duration": 60
+       "amplifier": 1
+		"effect_name": "nausea",
+        "effect_duration": 60
+       "amplifier": 1
+		"effect_name": "blindness",
+        "effect_duration": 60
+       "amplifier": 2
+		"effect_name": "weakness",
+        "effect_duration": 60
+       "amplifier": 1
+		"effect_name": "poison",
+        "effect_duration": 60
+       "amplifier": 1
         ]
       },
 			"minecraft:movement": {
@@ -102,7 +125,7 @@
                   { "test" :  "is_family", "subject" : "other", "value" :  "snowgolem"},
                   { "test" :  "is_family", "subject" : "other", "value" :  "irongolem"}
                 ]  },
-            "max_dist": 8,
+            "max_dist": 16,
             "attack_interval": 10
           }
         ]
