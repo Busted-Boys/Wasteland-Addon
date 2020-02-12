@@ -169,10 +169,6 @@
         ],
         "must_see": true
       },
-      "minecraft:behavior.flee_sun": {
-        "priority": 2,
-        "speed_multiplier": 1
-      },
       "minecraft:behavior.avoid_mob_type": {
         "priority": 4,
         "entity_types": [
