@@ -90,8 +90,8 @@
         "breathes_water": true
       },
       "minecraft:health": {
-        "value": 15,
-        "max": 15
+        "value": 8,
+        "max": 8
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
