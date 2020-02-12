@@ -50,6 +50,9 @@
       },
       "minecraft:attack": {
         "damage": 2
+        "effect_name": "slowness",
+        "effect_duration": 30
+       "amplifier": 1
       },
       "minecraft:damage_sensor": {
         "triggers": {
