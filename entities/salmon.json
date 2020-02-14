@@ -15,8 +15,8 @@
         },
 
         "minecraft:health": {
-          "value": 6,
-          "max": 6
+          "value": 1,
+          "max": 1
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/salmon_normal.json"
@@ -28,8 +28,8 @@
         },
 
         "minecraft:health": {
-          "value": 6,
-          "max": 6
+          "value": 2,
+          "max": 2
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/salmon_normal.json"
@@ -41,8 +41,8 @@
           "value": 1.5
         },
         "minecraft:health": {
-          "value": 6,
-          "max": 6
+          "value": 4,
+          "max": 4
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/salmon_large.json"
@@ -161,19 +161,19 @@
       "minecraft:entity_spawned": {
         "randomize": [
           {
-            "weight": 30,
+            "weight": 2,
             "add": {
               "component_groups": [ "adult", "scale_small" ]
             }
           },
           {
-            "weight": 50,
+            "weight": 3,
             "add": {
               "component_groups": [ "adult", "scale_normal" ]
             }
           },
           {
-            "weight": 15,
+            "weight": 1,
             "add": {
               "component_groups": [ "adult", "scale_large" ]
             }
