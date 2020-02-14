@@ -8,6 +8,196 @@
       "is_experimental": false
     },
     "component_groups": {
+      "minecraft:ravager_baby": {
+        "minecraft:is_baby": {
+        },
+        "minecraft:scale_by_age": {
+          "start_scale": 0.5,
+          "end_scale": 1.0
+        },
+        "minecraft:ageable": {
+          "duration": 2400,
+          "feed_items": [
+            {
+              "item": "rotten_flesh",
+              "growth": 0.025
+            },
+            {
+              "item": "emerald",
+              "growth": 0.05
+            },
+            {
+              "item": "appleEnchanted",
+              "growth": 0.5
+            }
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        }
+      },
+       "minecraft:ravager_adult": {
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/ravager.json"
+        },
+        "minecraft:behavior.run_around_like_crazy": {
+          "priority": 1,
+          "speed_multiplier": 1.2
+        }
+      },
+
+      "minecraft:ravager_wild": {
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player",
+            "zombie"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0, 0.975, -0.2 ]
+          }
+        },
+          "minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "speed_multiplier": 1.5,
+          "target_dist": 0.0,
+          "track_target": true
+        },
+        "minecraft:tamemount": {
+          "min_temper": 0,
+          "max_temper": 100,
+          "feed_text": "action.interact.feed",
+          "ride_text": "action.interact.mount",
+          "feed_items": [
+            {
+              "item": "rotten_flesh",
+              "temper_mod": 3
+            },
+            {
+              "item": "emerald",
+              "temper_mod": 3
+            },
+            {
+              "item": "appleEnchanted",
+              "temper_mod": 10
+            }
+          ],
+          "auto_reject_items": [
+            {
+              "item": "horsearmorleather"
+            },
+            {
+              "item": "horsearmoriron"
+            },
+            {
+              "item": "horsearmorgold"
+            },
+            {
+              "item": "horsearmordiamond"
+            },
+            {
+              "item": "saddle"
+            }
+          ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+      },
+ "minecraft:ravager_tamed": {
+        "minecraft:is_tamed": {
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item": "saddle",
+              "accepted_items": [ "saddle" ],
+              "on_equip": {
+                "event": "minecraft:ravager_saddled"
+              },
+              "on_unequip": {
+                "event": "minecraft:ravager_unsaddled"
+              }
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "priority": 0,
+          "seat_count": 1,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0, 0.975, -0.2 ]
+          }
+        },
+        "minecraft:inventory": {
+          "inventory_size": 16,
+          "container_type": "horse"
+        },
+     "minecraft:behavior.tempt": {
+          "priority": 5,
+          "speed_multiplier": 1.2,
+          "items": [
+            "appleEnchanted",
+            "emerald",
+            "rotten_flesh",
+          ]
+        }
+      },
+      "minecraft:ravager_unchested": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "play_sounds": "armor.equip_generic",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "chest"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"}
+                  ]
+                },
+                "event": "minecraft:on_chest",
+                "target": "self"
+              },
+              "use_item": true,
+              "interact_text": "action.interact.attachchest"
+            }
+          ]
+        }
+      },
+
+      "minecraft:ravager_chested": {
+        "minecraft:is_chested": {
+
+        }
+      },
+
+      "minecraft:ravager_saddled": {
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:behavior.player_ride_tamed": {
+        }
+      }
+    },
+        {
       "minecraft:celebrate": {
         "minecraft:behavior.celebrate": {
           "priority": 5,
@@ -241,7 +431,7 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 24.0
+        "damage": 252
       },
       "minecraft:breathable": {
         "suffocate_time": 0,
@@ -252,8 +442,8 @@
         "width": 1.2
       },
       "minecraft:health": {
-        "max": 400,
-        "value": 400
+        "max": 250,
+        "value": 300
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -330,6 +520,7 @@
           "pillager",
           "vindicator",
           "evocation_illager"
+          "player"
         ],
         "seats": {
           "position": [ 0.0, 2.1, -0.3 ]
@@ -346,6 +537,13 @@
     },
     "events": {
       "minecraft:entity_spawned": {
+       "randomize": [
+          {
+            "weight": 4,
+            "add": {
+              "component_groups": [ "adult" ]
+          },
+      {
         "add": {
           "component_groups": [
             "minecraft:hostile"
