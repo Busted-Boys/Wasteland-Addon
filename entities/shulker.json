@@ -109,8 +109,8 @@
       "minecraft:nameable": {
       },
       "minecraft:health": {
-        "value": 30,
-        "max": 30
+        "value": 90,
+        "max": 90
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -154,7 +154,7 @@
       "minecraft:behavior.ranged_attack": {
         "attack_interval_min": 1,
         "attack_interval_max": 3,
-        "attack_radius": 15
+        "attack_radius": 32
       },
       "minecraft:behavior.hurt_by_target": {
         "priority": 2
@@ -163,7 +163,7 @@
         "priority": 3,
         "entity_types": {
           "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-          "max_dist": 16
+          "max_dist": 32
         },
         "must_see": true
       },
