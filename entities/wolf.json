@@ -195,7 +195,7 @@
           "stop_distance": 2
         },
         "minecraft:attack": {
-          "damage": 16
+          "damage": 56
 		"effect_name": "hunger",
         "effect_duration": 10
        "amplifier": 1
@@ -419,7 +419,7 @@
       "minecraft:entity_spawned": {
         "randomize": [
           {
-            "weight": 9,
+            "weight": 1,
             "remove": {
             },
             "add": {
