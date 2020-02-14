@@ -101,7 +101,7 @@
       "minecraft:entity_spawned": {
         "randomize": [
           {
-            "weight": 95,
+            "weight": 6,
             "remove": {
             },
             "add": {
