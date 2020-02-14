@@ -4,7 +4,7 @@
     "description": {
       "identifier": "minecraft:shulker_bullet",
       "is_spawnable": false,
-      "is_summonable": false,
+      "is_summonable": true,
       "is_experimental": false
     },
 
@@ -16,14 +16,20 @@
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 6,
+            "damage": 84,
             "knockback": true,
             "should_bounce": true
           },
           "mob_effect": {
             "effect": "levitation",
             "durationeasy": 200,
-            "durationnormal": 200,
+            "durationnormal": 400,
+            "durationhard": 600,
+            "amplifier": 1
+             "mob_effect": {
+            "effect": "blindness",
+            "durationeasy": 200,
+            "durationnormal": 400,
             "durationhard": 600,
             "amplifier": 1
           },
@@ -35,7 +41,7 @@
           }
         },
         "hit_sound": "bullet.hit",
-        "destroyOnHurt": false,
+        "destroyOnHurt": true,
         "crit_particle_on_hurt": true,
         "power": 1.6,
         "gravity": 0.05,
@@ -46,7 +52,7 @@
         "homing": true
       },
       "minecraft:physics": {
-        "has_collision": false
+        "has_collision": true
       }
     }
   }
