@@ -224,7 +224,7 @@
       "minecraft:entity_spawned": {
         "randomize": [
           {
-            "weight": 9,
+            "weight": 1,
             "add": {
               "component_groups": [
                 "minecraft:adult"
